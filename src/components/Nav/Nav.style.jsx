@@ -90,7 +90,7 @@ export const LeftContainer = styled.div`
       justify-content:start;
       align-items:start;
       position:absolute;
-      padding: 3rem;
+      padding: 1rem 2rem;
       top: 0;
       right: ${props => props.burguerMenuActive ? '0' : '-100%'};
       background: ${theme.colors.primary_color};

@@ -23,7 +23,7 @@ export const CardDescription = styled.p`
     font-family: Roboto, 'monospace';
 
     @media(max-width: 700px){
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
 `
