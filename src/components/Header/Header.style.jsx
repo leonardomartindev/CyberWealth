@@ -10,7 +10,7 @@ export const HeaderSection = styled.header`
     @media(max-width: 1000px){
       padding: 5rem;
     }
-    @media(max-width: 600px){
+    @media(max-width: 800px){
       flex-direction:column;
       align-items:center;
       justify-content:center;
@@ -172,16 +172,13 @@ export const ImageContainer = styled.div`
 `
 export const Image = styled.img`
     width: 40rem;
-    height: auto;
     position: relative;
     z-index: 1;
 
     @media(max-width: 1000px){
       width: 35rem;
     }
-    @media(max-width: 900px){
-      display:none;
-    }
+   
    
     `
 
