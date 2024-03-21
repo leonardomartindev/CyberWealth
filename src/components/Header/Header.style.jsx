@@ -182,9 +182,7 @@ export const Image = styled.img`
     @media(max-width: 900px){
       display:none;
     }
-    @media(max-width: 600px){
-      display:block;
-    }
+   
     `
 
 export const Squares = styled.img`
@@ -199,6 +197,9 @@ export const Squares = styled.img`
     }
     @media(max-width: 600px){
       bottom: -40rem;
+    }
+    @media(max-width: 900px){
+      display:none;
     }
 `
 
