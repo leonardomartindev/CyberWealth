@@ -86,7 +86,6 @@ export const LeftContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 8rem;
-    transition: all 2s ease;
     @media(max-width: 1000px){
       justify-content:start;
       align-items:start;
@@ -105,6 +104,7 @@ export const LeftContainer = styled.div`
     @media(max-width: 700px){
       width: 100vw;
       display:${props => props.burguerMenuActive ? 'block' : 'none'};;
+      right: ${props => props.burguerMenuActive ? '0' : '-100%'};
 
     }
 `;
