@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { theme } from "../../Theme";
 
 export const CriptoContainer = styled.section`
-    margin-top: 15rem;
+    margin-top: 12rem;
     width: 100vw;
-    height: 80vh;
+    height: auto;
     padding: 0 7rem;
     display:flex;
     flex-direction:column;
@@ -15,7 +15,7 @@ export const CriptoContainer = styled.section`
     }
     @media(max-width: 700px){
         height: 100vh;
-        padding: 0 2rem;
+        padding: 2rem 2rem;
     }
 `
 export const CriptoTitle = styled.h1`
@@ -26,7 +26,6 @@ export const DownContainer = styled.div`
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
-
     @media(max-width: 850px){
         grid-template-columns: repeat(1, 1fr);
         gap: 6rem;
@@ -36,6 +35,7 @@ export const DownContainer = styled.div`
 export const GraphicContainer = styled.div`
     display:flex;
     align-items:center;
+    
 `
 export const GraphicTable = styled.table`
     width: 100%;

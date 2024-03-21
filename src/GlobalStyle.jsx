@@ -30,6 +30,9 @@ font-size: 62.5%;
     @media (max-width: 600px){
         font-size: 45%;
     }
+    @media (max-width: 300px){
+        font-size: 40%;
+    }
 }
 a{
 text-decoration:none;
