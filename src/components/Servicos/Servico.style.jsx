@@ -12,7 +12,6 @@ export const ServiceSection = styled.section`
 export const ServiceTitle = styled.h1`
     font-size: 5rem;
     padding: 0rem 7rem;
-
     @media(max-width: 700px){
         font-size: 4rem;
         padding: 0 2rem;

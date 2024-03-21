@@ -1,6 +1,7 @@
-import { NavContainer, LeftContainer, RightContainer, Ul, Li, Logo, BtnLogin, BtnOpenAccount, ArrowIcon, TradePopup, TradePopupH2, TradePopupP, TradeLi, MenuIcon, CloseIcon, BurguerButton1, BurguerButton2, BurguerContainerBtn } from "./Nav.style.jsx";
+import { NavContainer, LeftContainer, RightContainer, Ul, Li, Logo, BtnLogin, BtnOpenAccount, ArrowIcon, TradePopup, TradePopupH2, TradePopupP, TradeLi, MenuIcon, CloseIcon, BurguerButton1, BurguerButton2, BurguerContainerBtn, BonusLi, ServiceIcon, CoinsIcon, FaqIcon, NewsIcon, EducationIcon, AnalisisIcon, EventsIcon, TradeIcon } from "./Nav.style.jsx";
 import LogoImage from '../../assets/logo.svg'
 import { useState, useEffect } from "react"
+
 
 export default function Nav() {
   const [showTradePopup, setShowTradePopup] = useState(false); // Estado para controlar a exibição da janela de trade
@@ -40,20 +41,41 @@ export default function Nav() {
               <BurguerButton2>abra sua conta</BurguerButton2>
             </BurguerContainerBtn>
             <Li>
-              <a href="#" >nossos serviços</a>
+            <ServiceIcon/>
+              <a href="#" > nossos serviços</a>
             </Li>
             <Li>
+              <CoinsIcon/>
               <a href="#">moedas</a>
             </Li>
-            <Li>
+            <Li burguerMenuActive={burguerMenuActive}>
+              <FaqIcon/>
               <a href="#">faq</a>
             </Li>
+            <BonusLi burguerMenuActive={burguerMenuActive}>
+              <NewsIcon/>
+              <a href="#">NOTICIAS SOBRE CRIPTOMOEDAS</a>
+            </BonusLi>
+            <BonusLi burguerMenuActive={burguerMenuActive}>
+              <EducationIcon/>
+              <a href="#">EDUCAÇÃO FINANCEIRA</a>
+            </BonusLi>
+            <BonusLi burguerMenuActive={burguerMenuActive}>
+              <AnalisisIcon/>
+              <a href="#">ANÁLISES DE MERCADO</a>
+            </BonusLi>
+            <BonusLi burguerMenuActive={burguerMenuActive}>
+              <EventsIcon/>
+              <a href="#">EVENTOS E CONFERÊNCIAS</a>
+            </BonusLi>
+            
             
             <Li
               onMouseEnter={() => setLiHovered(true)}
               onMouseLeave={() => setLiHovered(false)}
             >
               {/* Mostrar/Esconder a janela de trade com base no hover */}
+              <TradeIcon/>
               <a href="#">
                 trade <ArrowIcon />
               </a>

@@ -2,7 +2,49 @@ import styled, { keyframes } from 'styled-components'
 import { theme } from '../../Theme'
 import { IoIosArrowForward, IoIosMenu  } from "react-icons/io";
 import { IoCloseCircleSharp } from "react-icons/io5";
+import { MdOutlineDesignServices, MdOutlineCurrencyExchange } from "react-icons/md";
+import { FaQuestionCircle } from "react-icons/fa";
+import { FaNewspaper } from "react-icons/fa6";
+import { MdCastForEducation } from "react-icons/md";
+import { FaChartLine } from "react-icons/fa6";
+import { MdEventRepeat } from "react-icons/md";
+import { GiTrade } from "react-icons/gi";
 
+export const ServiceIcon = styled(MdOutlineDesignServices)`
+font-size: 2rem;
+margin-right: 1rem;
+display:${props => props.burguerMenuActive ? "none" : "block"}
+`
+export const CoinsIcon = styled(MdOutlineCurrencyExchange)`
+font-size: 2rem;
+margin-right: 1rem;
+display:${props => props.burguerMenuActive ? "none" : "block"}`
+export const FaqIcon = styled(FaQuestionCircle)`
+font-size: 2rem;
+margin-right: 1rem;
+display:${props => props.burguerMenuActive ? "none" : "block"}`
+export const NewsIcon = styled(FaNewspaper)`
+font-size: 2rem;
+margin-right: 1rem;
+display:${props => props.burguerMenuActive ? "none" : "block"}
+
+`
+export const EducationIcon = styled(MdCastForEducation)`
+font-size: 2rem;
+margin-right: 1rem;
+display:${props => props.burguerMenuActive ? "none" : "block"}`
+export const AnalisisIcon = styled(FaChartLine)`
+font-size: 2rem;
+margin-right: 1rem;
+display:${props => props.burguerMenuActive ? "none" : "block"}`
+export const EventsIcon = styled(MdEventRepeat)`
+font-size: 2rem;
+margin-right: 1rem;
+display:${props => props.burguerMenuActive ? "none" : "block"}`
+export const TradeIcon = styled(GiTrade)`
+font-size: 2rem;
+margin-right: 1rem;
+display:${props => props.burguerMenuActive ? "none" : "block"}`
 
 
 export const ArrowIcon = styled(IoIosArrowForward)`` 
@@ -110,6 +152,10 @@ export const Li = styled.li`
     }
     
     `
+
+export const BonusLi = styled(Li)`
+    display:${props => props.burguerMenuActive ? "flex" : "none"};
+`
 
 export const Logo = styled.img`
     width: 8rem;

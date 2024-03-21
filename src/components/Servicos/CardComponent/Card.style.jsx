@@ -21,7 +21,6 @@ export const CardDescription = styled.p`
     font-size: 1.7rem;
     color:rgba(220, 220, 220, 1);
     font-family: Roboto, 'monospace';
-    letter-spacing: 1px;
 
     @media(max-width: 700px){
         font-size: 1.5rem;
