@@ -9,12 +9,16 @@ padding: 0;
 font-family: "arial", sans-serif;
 overflow-x:hidden;
 box-sizing: border-box;
+
 }
 body{
     background-color: ${theme.colors.primary_color};
-
+    width: 100%;
+    overflow-x: hidden;
 }
 html{
+    width: 100%;
+    overflow-x: hidden;
 font-size: 62.5%;
 
     @media (max-width: 1200px){

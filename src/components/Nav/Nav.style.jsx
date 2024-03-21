@@ -80,33 +80,41 @@ export const NavContainer = styled.nav`
     padding: .5rem 3rem;
     font-size: 1.4rem;
     z-index: 100;
-    `
+`;
+
 export const LeftContainer = styled.div`
     display: flex;
-    align-items:center;
+    align-items: center;
     gap: 8rem;
-    transition: all .3s ease;
+    transition: all 2s ease;
     @media(max-width: 1000px){
       justify-content:start;
       align-items:start;
       position:absolute;
       padding: 1rem 2rem;
       top: 0;
+      display:${props => props.burguerMenuActive ? 'block' : 'none'};
       right: ${props => props.burguerMenuActive ? '0' : '-100%'};
       background: ${theme.colors.primary_color};
       z-index: 2;
       border-left: 3px solid ${theme.colors.green};
       height: 100vh;
+      width: ${props => props.burguerMenuActive ? '40vw' : '0'}; 
+      transition: all 2s ease;
     }
     @media(max-width: 700px){
       width: 100vw;
+      display:${props => props.burguerMenuActive ? 'block' : 'none'};;
+
     }
-`
+`;
+
 
 
 
 export const RightContainer = styled.div`
     display: flex;
+    overflow-x: hidden; 
     gap: 1.5rem;
     @media(max-width: 1000px){
       position:absolute;
@@ -131,7 +139,6 @@ export const Ul = styled.ul`
       align-items:start;
       gap: 2rem;
       margin-top: 6rem;
-      width: 40vw;
     }
     @media(max-width: 700px){
       list-style-type: disc;
