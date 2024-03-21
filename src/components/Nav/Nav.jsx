@@ -41,31 +41,31 @@ export default function Nav() {
               <BurguerButton2>abra sua conta</BurguerButton2>
             </BurguerContainerBtn>
             <Li>
-            <ServiceIcon/>
+            <ServiceIcon burguerMenuActive={burguerMenuActive}/>
               <a href="#" > nossos serviços</a>
             </Li>
             <Li>
-              <CoinsIcon/>
+              <CoinsIcon burguerMenuActive={burguerMenuActive}/>
               <a href="#">moedas</a>
             </Li>
             <Li burguerMenuActive={burguerMenuActive}>
-              <FaqIcon/>
+              <FaqIcon burguerMenuActive={burguerMenuActive}/>
               <a href="#">faq</a>
             </Li>
             <BonusLi burguerMenuActive={burguerMenuActive}>
-              <NewsIcon/>
+              <NewsIcon burguerMenuActive={burguerMenuActive}/>
               <a href="#">NOTICIAS SOBRE CRIPTOMOEDAS</a>
             </BonusLi>
             <BonusLi burguerMenuActive={burguerMenuActive}>
-              <EducationIcon/>
+              <EducationIcon burguerMenuActive={burguerMenuActive}/>
               <a href="#">EDUCAÇÃO FINANCEIRA</a>
             </BonusLi>
             <BonusLi burguerMenuActive={burguerMenuActive}>
-              <AnalisisIcon/>
+              <AnalisisIcon burguerMenuActive={burguerMenuActive}/>
               <a href="#">ANÁLISES DE MERCADO</a>
             </BonusLi>
             <BonusLi burguerMenuActive={burguerMenuActive}>
-              <EventsIcon/>
+              <EventsIcon burguerMenuActive={burguerMenuActive}/>
               <a href="#">EVENTOS E CONFERÊNCIAS</a>
             </BonusLi>
             
@@ -75,7 +75,7 @@ export default function Nav() {
               onMouseLeave={() => setLiHovered(false)}
             >
               {/* Mostrar/Esconder a janela de trade com base no hover */}
-              <TradeIcon/>
+              <TradeIcon burguerMenuActive={burguerMenuActive}/>
               <a href="#">
                 trade <ArrowIcon />
               </a>

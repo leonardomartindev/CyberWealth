@@ -13,38 +13,38 @@ import { GiTrade } from "react-icons/gi";
 export const ServiceIcon = styled(MdOutlineDesignServices)`
 font-size: 2rem;
 margin-right: 1rem;
-display:${props => props.burguerMenuActive ? "none" : "block"}
+display:${props => props.burguerMenuActive ? "block" : "none"};
 `
 export const CoinsIcon = styled(MdOutlineCurrencyExchange)`
 font-size: 2rem;
 margin-right: 1rem;
-display:${props => props.burguerMenuActive ? "none" : "block"}`
+display:${props => props.burguerMenuActive ? "block" : "none"}`;
 export const FaqIcon = styled(FaQuestionCircle)`
 font-size: 2rem;
 margin-right: 1rem;
-display:${props => props.burguerMenuActive ? "none" : "block"}`
+display:${props => props.burguerMenuActive ? "block" : "none"}`;
 export const NewsIcon = styled(FaNewspaper)`
 font-size: 2rem;
 margin-right: 1rem;
-display:${props => props.burguerMenuActive ? "none" : "block"}
+display:${props => props.burguerMenuActive ? "block" : "none"};
 
 `
 export const EducationIcon = styled(MdCastForEducation)`
 font-size: 2rem;
 margin-right: 1rem;
-display:${props => props.burguerMenuActive ? "none" : "block"}`
+display:${props => props.burguerMenuActive ? "block" : "none"}`;
 export const AnalisisIcon = styled(FaChartLine)`
 font-size: 2rem;
 margin-right: 1rem;
-display:${props => props.burguerMenuActive ? "none" : "block"}`
+display:${props => props.burguerMenuActive ? "block" : "none"}`;
 export const EventsIcon = styled(MdEventRepeat)`
 font-size: 2rem;
 margin-right: 1rem;
-display:${props => props.burguerMenuActive ? "none" : "block"}`
+display:${props => props.burguerMenuActive ? "block" : "none"}`;
 export const TradeIcon = styled(GiTrade)`
 font-size: 2rem;
 margin-right: 1rem;
-display:${props => props.burguerMenuActive ? "none" : "block"}`
+display:${props => props.burguerMenuActive ? "block" : "none"}`;
 
 
 export const ArrowIcon = styled(IoIosArrowForward)`` 
