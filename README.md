@@ -27,3 +27,6 @@ Contribuições são bem-vindas! Sinta-se à vontade para fazer sugestões de me
 
 Este projeto foi desenvolvido por Leonardo Martin de Oliveira.
 
+## Link para acessar o deploy
+
+https://vercel.com/leonardomartin1312-gmailcom/cyber-wealth
